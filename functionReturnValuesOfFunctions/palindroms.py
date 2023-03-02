@@ -1,9 +1,11 @@
-def palindrome():
-    s = 'А роза упала на лапу Азора'
+def palindrome(s):
     s = s.lower().replace(' ', '')
-    # r = reversed(s)
+    r = ''.join(reversed(list(s)))
+    if s == r:
+        return 'Палиндром'
+    else:
+        return 'Не палиндром'
 
-    return s
 
 
 
@@ -18,7 +20,7 @@ def palindrome():
 
 
 def main():
-    print(palindrome())
+    print(palindrome('А роза упала на лапу Азора'))
 
 if __name__ == '__main__':
     main()
