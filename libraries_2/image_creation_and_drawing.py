@@ -131,7 +131,8 @@ def picture(file_name, width, height, sky_color="#87CEEB", ocean_color="#017B92"
                      int(0.51 * width + 1),
                      int(0.6 * height))), sail_color)
 
-    im.save(file_name)
+    # im.save(file_name)
+    im.show()
 
 
 def average_value_picture(file_name):
@@ -177,8 +178,8 @@ def board(num, size):
                                       (int(size) * (j + 1), int(size) * (i + 1))),
                                      fill='white')
 
-    im.save('res.png')
-    # im.show()
+    # im.save('res.png')
+    im.show()
 
 
 if __name__ == '__main__':
@@ -191,8 +192,9 @@ if __name__ == '__main__':
     # drawLine(100, 200)
 
     # Рисуем картинку
+    # picture()
     # picture('test.bmp', 1000, 800)
 
     # average_value_picture('car.jpg')
 
-    board(5, 30)
+    # board(8, 50)
